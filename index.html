@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nut | Developer Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Nut-Dev</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Nut</span></h1>
+        <p>
+          Data Science & Machine Learning Student | Developer | Content
+          Creator
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about hidden">
+      <h2>About Me</h2>
+      <p>
+        I'm a university student studying Data Science and Analytics, with a passion for machine learning, program development, and creative coding. 
+        Im also a small time content creator who hosts a weekly news series for the small community around the rhythm game "osu!"
+      </p>
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>C# & Unity</li>
+        <li>Data Visualisation</li>
+        <li>Web Development</li>
+        <li>Graphics/Video Design</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card hidden">
+          <h3>TWIO - This Week In osu!</h3>
+          <p>
+            Weekly news series for the rhythm game osu!, covering scores,
+            updates, and community highlights.
+          </p>
+          <a href="https://www.youtube.com/watch?v=w2P9aZOm3IA&list=PLGQaEWEIOUKg-GWsFZLbx74Z6EB92CkQr" 
+          class="btn">View Project</a>
+        </div>
+        <div class="project-card hidden">
+          <h3>osu!Scorecard</h3>
+          <p>
+            A small webapp that creates scorecard images for the rhythm game osu!,
+            using the API.
+          </p>
+          <a href="https://osuscorecard.ddns.net/" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact hidden">
+      <h2>Contact Me</h2>
+      <p>Let's work together! Reach out via email or socials below.</p>
+      <form action="https://formsubmit.co/d7f042e7937d402e620b38cf7c1512f2" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Nut. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
