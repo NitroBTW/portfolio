@@ -195,8 +195,31 @@ header {
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
   background: #222;
   color: #fff;
+  padding: 1rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffb143;
+}
+
+.copyright {
+  margin: 0;
+  text-align: right;
+  flex: 1;
 }
