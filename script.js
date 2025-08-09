@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Burger menu
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        burger.classList.toggle("toggle");
+    });
+
     // Animate elements on scroll
     const observer = new IntersectionObserver(
         (entries) => {
@@ -12,13 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     document.querySelectorAll(".hidden").forEach((el) => observer.observe(el))
-
-    // Burger menu
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-links");
-
-    burger.addEventListener("click", () => {
-        nav.classList.toggle("active");
-        burger.classList.toggle("toggle");
-    });
 })
